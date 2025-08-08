@@ -1,5 +1,10 @@
+from django.contrib import admin
 from django.urls import path
-from . import views
+from django.conf import settingd
+from django.conf.urls.static import static
 
-utlpatterns = [path('',views.home_view, name='home'),
+
+
+utlpatterns = [path('admin/', admin.site.urls),
+path('', include())
 ]
