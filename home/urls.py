@@ -1,10 +1,6 @@
-from django.contrib import admin
 from django.urls import path
-from django.conf import settingd
-from django.conf.urls.static import static
+from .import views
 
-
-
-utlpatterns = [path('admin/', admin.site.urls),
-path('', include())
+urlpatterns = [
+    path('', views.home_view, name='home')
 ]
