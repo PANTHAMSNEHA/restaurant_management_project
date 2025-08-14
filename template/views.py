@@ -1,11 +1,11 @@
 #views.py
 
 from django.shortcuts import render
-from django.conf import settings
+
 
 def home(request):
     context = {
-        'phone_number': settings.RESTAURANT_PHONE_NUMBER
+        'restaurant_name' : 'Flavours of India'
 
     }
-    return render(request, 'home/home.html',context)
+    return render(request, 'home.html',context)
