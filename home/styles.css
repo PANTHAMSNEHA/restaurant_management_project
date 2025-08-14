@@ -11,6 +11,39 @@ header{
     padding:20px;
     text-align: center;
 }
+
+
+h1  {
+    color: #333;
+    text-align:center;
+    margin-top:20px;
+}
+
+ul  {
+    list-style-type:none;
+    padding:0;
+    max-width:600px;
+    margin: 20px auto;
+    background-color:#fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0.1);
+    border-radius: 5px;
+
+}
+
+li {
+    padding:15px;
+    border-bottom: 1px solid #ddd;
+    text-align: center;
+}
+
+li:last-child{
+    border-bottom: none;
+
+}
+li:hover{
+    background-color:#f0f0f0;
+}
+
 main{
     padding:40px;
     text-align: center;
