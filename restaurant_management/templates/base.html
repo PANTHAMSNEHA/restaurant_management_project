@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Flavours of India{% endblock %}</title>
+        <style>
+            body{
+                font-family: 'Segoe UI',Tahoma, Geneva, Verdana,sans-serif;
+                background-color: #f8f9fa;
+                color: #333;
+                margin: 0;
+                padding-bottom: 60px; /*space for footer */
+            }
+            .container{
+                max-width: 800px;
+                margin: 50px auto;
+                padding: 30px;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0,0,0,0.1);
+                border-radius: 8px;
+            }
+            footer{
+                position: fixed;
+                bottom: 0;
+                width: 100%;
+                background-color: #eee;
+                text-align: center;
+                padding: 10px 0;
+                font-size: 14px;
+                color: #666;
+            }
+        </style>
+    </head>
+<body>
+    <div class="container">
+        {% block content %}{% endblock %}
+    </div>
+    <footer>
+        &copy; {{ current_year }} Flavours of India. All rights reserved.
+    </footer>
+</body>
+</html>
