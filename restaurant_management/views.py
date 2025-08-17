@@ -1,5 +1,11 @@
 from django.shortcuts import render
+from django.http import HttpResponseServerError
 
-def about_view(request):
-    """Render the About Us page with restaurant info and team details."""
-    return render(request, 'about.html')
+def reservations(request):
+    try:
+        content = {
+            'message': 'Reservations page coming soon!'
+        }
+        return render(request, 'reservations.html', context)
+    except Exception as e:
+        return HttpResponseServerError(f"An error occured: {e}")
