@@ -1,11 +1,10 @@
-from django.shortcuts import render
-from django.http import HttpResponseServerError
-
-def reservations(request):
+def home(request):
     try:
+        query = request.GET.get('q','')
         content = {
-            'message': 'Reservations page coming soon!'
+            "restaurant_name":"Flavours of India",
+            "search_query": query
         }
-        return render(request, 'reservations.html', context)
+        return render(request, 'home.html', content)
     except Exception as e:
-        return HttpResponseServerError(f"An error occured: {e}")
+        return HttpResponseServerErrir(f"An error occurred: {e}")
