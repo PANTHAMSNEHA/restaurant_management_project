@@ -1,41 +1,8 @@
-<!DOCTYPE html> 
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>Flavours of India</title>
-        <link rel="stylesheet"type="text/css" href=".../home/style.css"
-    </head>
-    <style>
-        body{
+{% extends 'base.html' %}
 
-             font-family: 'Segoe UI',Tahoma, Geneva, Verdana, sans-serif;
-             background-color: #f8f9fa;
-             color: #333;
-             margin:0;
-             padding: 0;
-        }
-        .container{
-        max-width: 800px;
-        margin: 50px auto;
-        padding:30px;
-        background-color: #ffffff;
-        box-shadow: 0 0 10px rgba(0,0,0,0.1);
-        border-radius: 8px;
-        }
-        h1{
-        color:#c0392b;
-        text-align:center;
-        margin-bottom: 20px;
-        }
-        p{
-          font-size: 18px;
-          line-height:1.6;
-          text-align:center;
-          }
+{% block title %}Home- Flavours of India{% endblock %}
 
-    <body>
-        <div class="container">
-        <h1>Welcome to {{restaurant_name}}</h1>
-        <p>We are delighted to have you here. Enjoy our delicious menu items!</p>
-    </body>
-</html>
+{% block content %}
+  <h1>Welcome to Flavours of India</h1>
+  <p>Enjoy authentic Indian cuisine!</p>
+{% endblock %}
