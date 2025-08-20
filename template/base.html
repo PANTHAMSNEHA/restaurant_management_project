@@ -1,13 +1,29 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>{% block title %}Restaurant{% endblock%}</title>
+        <meta charset="UTF-8">
+        <title>{% block title %}Flavours of India{% endblock%}</title>
+        <style>
+            body { font-family:Arial, sans-serif; margin:0; padding:0;}
+            footer{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position:fixed;
+            bottom:0;
+            width:100%;
+            }
+            .content { padding-bottom: 60px; }
+        </style>
     </head>
     <body>
+        <div class="content">
         {% block content %}{% endblock %}
+        </div>
 
-        <footer style="margin-top:50px; padding:10px; background-color:#f2f2f2; text-align:center;">
-            <p><strong>Opening Hours:</strong> Mon-Fri: 11am-9pm, Sat-Sun: 10am-10pm</p>
+        <footer>
+            &copy; 2025 Flavours of India. All rights reserved.
         </footer>
     </body>
 </html>
