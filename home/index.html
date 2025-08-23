@@ -1,4 +1,8 @@
 
+<h1>Welcome to {{ restaurant_name}} </h1>
 
-
-
+<form method="post">
+    {% crsf_token %}
+    {{ form.as_p }}
+    <button type="submit">Submit</button>
+</form>
