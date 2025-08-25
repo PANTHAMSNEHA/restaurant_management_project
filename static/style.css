@@ -1,0 +1,9 @@
+#location{
+    padding:20px;
+    background-color: #f9f9f9;
+    border-top: 2px solid #ccc;
+}
+
+#location h2{
+    margin-bottom: 10px;
+}
