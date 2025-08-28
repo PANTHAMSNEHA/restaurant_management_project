@@ -1,0 +1,9 @@
+<h1>{{ restaurant.name }}</h1>
+<p>{{ restaurant.description }}</p>
+
+<h2>Opening Hours </h2>
+<ul>
+    {% for day, hours in restaurant.opening_hours.items %}
+      <li><strong>{{ day }}:</strong> {{ hours }}</li>
+    {% endfor %}
+</ul>
