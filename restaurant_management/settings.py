@@ -1,6 +1,4 @@
-INSTALLED_APPS = [
+import os
 
-    ...
-    'rest_framework',
-
-]
+MEDIA_URL = '/media'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
