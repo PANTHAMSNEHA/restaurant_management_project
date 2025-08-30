@@ -4,3 +4,6 @@ from .models import Restaurant
 def homepage(request):
     restaurant = Restaurant.objects.first()
     return render(request, 'homepage.html',{'restaurant':restaurant})
+
+def about_us(request):
+    return render(request, 'about.html')
