@@ -4,6 +4,8 @@
 <h2>Opening Hours </h2>
 
 <h2 style="color: #2c3e50; font-weight:bold;">Call Us: {{ phone }}</h2>
+
+
 <ul>
     {% for day, hours in restaurant.opening_hours.items %}
       <li><strong>{{ day }}:</strong> {{ hours }}</li>
