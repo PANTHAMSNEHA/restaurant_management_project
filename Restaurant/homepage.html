@@ -6,6 +6,13 @@
 <h2 style="color: #2c3e50; font-weight:bold;">Call Us: {{ phone }}</h2>
 
 
+{% load custom_filters %}
+
+<div style="margin-top:20px; font-size:1.2em; color: #2c3e50;">
+    Current Time: {{ current_time|format_datetime }}
+
+</div>
+
 <ul>
     {% for day, hours in restaurant.opening_hours.items %}
       <li><strong>{{ day }}:</strong> {{ hours }}</li>
