@@ -1,0 +1,20 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Our Restaurant </title>
+        <link rel="sytlesheet"  href="{% static 'css/styles.css'  %}">
+    </head>
+    <body>
+        <div class="hero">
+            <div class="overlay">
+                <h1>Welcome  to Our Restauranr</h1>
+                <p>Where flavour meets feeling.</p>
+            </div>
+        </div>
+            <section class="gallery">
+                <img src="{% static 'images/dish1.jpg' %}" alt="Dish 1">
+                <img src="{% static 'images/dish2.jpg' %}"  alt="Dish 2">
+            </section>
+    </body>
+</html>
